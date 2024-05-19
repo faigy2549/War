@@ -35,71 +35,21 @@ War is a simple card game played between two players. In each round, both player
    git clone https://github.com/yourusername/war-cards-game.git
    cd war-cards-game
 Create a virtual environment:
-
-bash
-Copy code
 python -m venv venv
 source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 Install the dependencies:
-
-bash
-Copy code
 pip install -r requirements.txt
 Apply the database migrations:
-
-bash
-Copy code
 python manage.py migrate
 Run the development server:
-
-bash
-Copy code
 python manage.py runserver
 Open your web browser and navigate to:
-
-arduino
-Copy code
 http://127.0.0.1:8000/
+
 Usage
 Open the web application.
 Start a new game.
 Click "Draw Card" to play a round of War.
 View the results of each round and track your progress.
-Project Structure
-The project has the following structure:
-
-markdown
-Copy code
-war-cards-game/
-├── manage.py
-├── warcards/
-│   ├── __init__.py
-│   ├── settings.py
-│   ├── urls.py
-│   ├── wsgi.py
-│   └── asgi.py
-├── game/
-│   ├── __init__.py
-│   ├── admin.py
-│   ├── apps.py
-│   ├── models.py
-│   ├── tests.py
-│   ├── urls.py
-│   ├── views.py
-│   └── templates/
-│       └── game/
-│           ├── index.html
-│           ├── game.html
-└── requirements.txt
-manage.py: Django's command-line utility.
-wargame/: The main Django project folder.
-settings.py: Configuration for the Django project.
-urls.py: URL routing for the project.
-game/: The War game application.
-models.py: Database models for the game.
-views.py: Views to handle web requests.
-templates/game/: HTML templates for the game.
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
 
 Enjoy playing the War card game! If you have any questions or run into any issues, please open an issue on the GitHub repository. Happy gaming!
